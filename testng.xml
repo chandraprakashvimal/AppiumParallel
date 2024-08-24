@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite name="Sample test" parallel="tests" thread-count="2">
+    <test name="first test">
+        <parameter name="deviceName" value="Pixel7"/>
+        <parameter name="platformVersion" value="8.1"/>
+        <parameter name="portNumber" value="7777"/>
+        <classes>
+            <class name="SampleTest"/>
+        </classes>
+    </test>
+
+    <test name="second test">
+        <parameter name="deviceName" value="cpv"/>
+        <parameter name="platformVersion" value="9"/>
+        <parameter name="portNumber" value="6666"/>
+        <classes>
+            <class name="SampleTest2"/>
+        </classes>
+    </test>
+
+</suite>
